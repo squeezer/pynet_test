@@ -14,5 +14,5 @@ for octet in octets:
 print octets_converted
 
 print "{:>12} {:>12} {:>12} {:>12}".format(octets[0], octets[1], octets[2], octets[3])
-
+print "{:>12} {:>12} {:>12} {:>12}".format(octets_converted[0], octets_converted[1], octets_converted[2], octets_converted[3])
 
