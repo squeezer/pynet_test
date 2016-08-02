@@ -14,6 +14,7 @@ for key, value in network_device.iteritems():
     print key, value
 
 network_device['secret'] = 'Very secret'
+network_device['password'] = 'new passw0rd1'
 
 print(r'Checking device type...')
 device_type = network_device.get('device_type', 'cisco_ios')
