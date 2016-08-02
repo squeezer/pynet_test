@@ -3,6 +3,8 @@
 ## Let's talk about namespaces. What does this mean? It means the place
 ## that variables "live" and the locations you can reference them.
 
+MY_CONST = 'whatever'
+
 def my_func(x, y, z=30): ## These variables are local to this function
     print "Inside my_func"
     x = 40 ## This overrides the Main x here, but not outside of my_func
@@ -16,8 +18,9 @@ def my_func2():
     pass
 
 ## Use this syntax to designate the "main" part of the script
+## Another option is to just define "main()" and then call 
+## main() from the bottom.
 if __name__ == "__main__":
-    MY_CONST = 'whatever'
     x = 10
     y = 20
     z = 31
