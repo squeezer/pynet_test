@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-print('Exercise 14 - Dictionaries')
+print('Exercise 15 - Dictionaries')
 
 network_device = {} # deliberately not using {'key': value} here 
 network_device['ip_address'] = '8.8.8.8'
