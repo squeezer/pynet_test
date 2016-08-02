@@ -50,7 +50,6 @@ class NetworkDevice(object):
             match = re.search(pattern, line)
             if match:
                 os_version = match.group(1)
-        print('We are in the %s object' % self)
         return os_version
 
     def get_serial_number(self):
@@ -83,7 +82,8 @@ data2 = read_file('my_test21_file-2.txt')
 router1 = NetworkDevice(data)
 router2 = NetworkDevice(data2)
 
+print '-' * 43
 router1.show_information()
-print('-----------')
+print '-' * 43
 router2.show_information()
 
